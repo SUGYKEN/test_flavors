@@ -1,3 +1,4 @@
+import 'package:flavorsexample/main_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flavorsexample/resource/display_strings.dart';
 import 'package:intl/intl.dart';
@@ -30,6 +31,8 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               Text(APP_TITLE),
               Text(DATE + getDateForDisplay()),
+              const Text(EnvironmentConfig.APP_NAME),
+              const Text(EnvironmentConfig.APP_SUFFIX),
               Text(APP_DESCRIPTION),
               Image.asset('assets/dancing.png', width: 50.0, height: 50.0,),
               Image.asset('assets/1.png', width: 50.0, height: 50.0),
